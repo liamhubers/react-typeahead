@@ -174,9 +174,10 @@ var Typeahead = React.createClass({
     var formInputOptionString = formInputOption(option);
 
     nEntry.value = optionString;
+      console.log()
     this.setState({visible: this.getOptionsForValue(optionString, this.props.options),
                    selection: formInputOptionString,
-                   entryValue: optionString});
+                   entryValue: ''});
     return this.props.onOptionSelected(option, event);
   },
 
